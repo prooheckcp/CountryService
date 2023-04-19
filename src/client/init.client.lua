@@ -8,8 +8,6 @@ local CountryService = require(ReplicatedStorage.CountryService)
 
 local country: CountryService.Country = CountryService:GetMyCountry()
 
-print(country)
-
 --Set the UI
 local screenGui: ScreenGui = playerGui:WaitForChild("Country") :: ScreenGui
 local container: Frame = screenGui:WaitForChild("Container") :: Frame
