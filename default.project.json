@@ -1,0 +1,26 @@
+{
+  "name": "CountryService",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "CountryService": {
+        "$path": "CountryService"
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    }
+  }
+}
