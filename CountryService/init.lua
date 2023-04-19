@@ -85,7 +85,7 @@ function CountryService:GetMyCountry(): Country.Country?
         task.wait()
     end
 
-    return self:_GetCountryCode(self._yourCode)
+    return self:GetCountryByCode(self._yourCode)
 end
 
 --[=[
@@ -144,7 +144,12 @@ function CountryService:_GetCountryCode(player: Player): string
         attempts += 1
 
         if success or attempts >= MAXIMUM_ATTEMPTS then
-            finalCode = code
+            if tonumber(code) ~= nil then --Sometimes the API fails and can't retrieve country codes so it returns 150
+                finalCode = DEFAULT_COUNTRY_CODE
+            else
+                finalCode = code
+            end
+            
             break
         end
     end
@@ -154,5 +159,7 @@ function CountryService:_GetCountryCode(player: Player): string
 end
 
 CountryService:_Init()
+
+export type Country = Country.Country
 
 return CountryService
