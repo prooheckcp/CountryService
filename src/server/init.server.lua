@@ -1,11 +1,11 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local LocalizationService = game:GetService("LocalizationService")
 local Players = game:GetService("Players")
 
 local CountryService = require(ReplicatedStorage.CountryService)
 
 local MAXIMUM_ROW: number = 10
 
+local template: BillboardGui = ReplicatedStorage:WaitForChild("Template")
 local spawnLocation: SpawnLocation = workspace:WaitForChild("SpawnLocation")
 local cubeSize: Vector3 = spawnLocation.Size
 local startPosition: Vector3 = spawnLocation.Position
@@ -47,3 +47,17 @@ for _, country: CountryService.Country in CountryService:GetAllCountries() do
 
     countryCount += 1
 end
+
+--Set country tags
+Players.PlayerAdded:Connect(function(player: Player)
+    player.CharacterAdded:Connect(function(character: Model)
+        local playerCountry: CountryService.Country = CountryService:GetPlayerCountry(player)
+        local label: string = `{playerCountry.emoji} {player.Name} | {playerCountry.name}`
+        
+        local newGui: BillboardGui = template:Clone()
+
+        local countryInfo: TextLabel = newGui:WaitForChild("CountryInfo") :: TextLabel
+        countryInfo.Text = label
+        newGui.Parent = character.PrimaryPart
+    end)
+end)
