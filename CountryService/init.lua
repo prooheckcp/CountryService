@@ -72,12 +72,17 @@ end
     Returns your own Country. Only works when called from a client script
 
     @client
+    @yields
 
     @return Country?
 ]=]
 function CountryService:GetMyCountry(): Country.Country?
     if RunService:IsServer() then
         return error(":GetMyCountry() can only be called from a local script")
+    end
+
+    while not self._yourCode do -- We want to wait for the user to load
+        task.wait()
     end
 
     return self:_GetCountryCode(self._yourCode)
@@ -87,10 +92,19 @@ end
     Gets a country object by the player object
 
     @param player Player
+    @yields
 
     @return Country
 ]=]
 function CountryService:GetPlayerCountry(player: Player): Country.Country
+    while not self._cachedCodes[player] do -- We want to wait for the user to load
+        if not Players:FindFirstChild(player.Name) then -- Check if the user is even online
+            break
+        end
+
+        task.wait()
+    end
+    
     return self:GetCountryByCode(self._cachedCodes[player])
 end
 
