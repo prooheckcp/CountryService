@@ -21,10 +21,15 @@ local function createBlock(country: CountryService.Country): Part
     topFlagDecal.Texture = country.decal
 
     local bottomFlagDecal: Decal = topFlagDecal:Clone()
+    bottomFlagDecal.Face = Enum.NormalId.Bottom
     local rightFlagDecal: Decal = topFlagDecal:Clone()
+    rightFlagDecal.Face = Enum.NormalId.Right
     local leftFlagDecal: Decal = topFlagDecal:Clone()
+    leftFlagDecal.Face = Enum.NormalId.Left
     local backFlagDecal: Decal = topFlagDecal:Clone()
+    backFlagDecal.Face = Enum.NormalId.Back
     local frontFlagDecal: Decal = topFlagDecal:Clone()
+    frontFlagDecal.Face = Enum.NormalId.Front
 
     topFlagDecal.Parent = newPart
     bottomFlagDecal.Parent = newPart
