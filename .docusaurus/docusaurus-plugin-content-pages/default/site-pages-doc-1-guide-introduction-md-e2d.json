@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/InventorySystem/doc1/Guide/Introduction",
+  "source": "@site/pages/doc1/Guide/Introduction.md",
+  "title": "📗Tutorial",
+  "description": "Grab your notebook and get ready for this step by step guide! In this guide we will be learning how to use RoactMotion!",
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "id": "TutorialIntroduction"
+  }
+}

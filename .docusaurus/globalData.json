@@ -1,0 +1,51 @@
+{
+  "docusaurus-lunr-search": {
+    "default": {
+      "fileNames": {
+        "searchDoc": "search-doc-1678728425112.json",
+        "lunrIndex": "lunr-index-1678728425112.json"
+      }
+    }
+  },
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/InventorySystem/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/InventorySystem/docs",
+          "mainDocId": "About",
+          "docs": [
+            {
+              "id": "About",
+              "path": "/InventorySystem/docs/About",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "Installation",
+              "path": "/InventorySystem/docs/Installation",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "Tutorial/Start",
+              "path": "/InventorySystem/docs/Tutorial/Start",
+              "sidebar": "docsSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docsSidebar": {
+              "link": {
+                "path": "/InventorySystem/docs/About",
+                "label": "About"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

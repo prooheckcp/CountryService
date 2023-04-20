@@ -1,0 +1,24 @@
+{
+  "unversionedId": "api/apiIntroduction",
+  "id": "api/apiIntroduction",
+  "title": "❓Introduction",
+  "description": "Welcome to Roact Motion's API! Here you can find detailed information about the parameters each function takes and details about all the classes and enums it uses! For any suggestions on what could be added in the future make sure to hit me in the DMs, my socials can be found at the footer of this page.",
+  "source": "@site/docs/api/Introduction.md",
+  "sourceDirName": "api",
+  "slug": "/api/apiIntroduction",
+  "permalink": "/InventorySystem/docs/api/apiIntroduction",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "displayed_sidebar": "apiSidebar",
+    "id": "apiIntroduction",
+    "sidebar_position": 1
+  },
+  "sidebar": "apiSidebar",
+  "next": {
+    "title": "createElement",
+    "permalink": "/InventorySystem/docs/api/createElement"
+  }
+}

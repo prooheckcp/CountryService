@@ -1,0 +1,27 @@
+{
+  "unversionedId": "docs/Guide/Start",
+  "id": "docs/Guide/Start",
+  "title": "Start",
+  "description": "This Guide assumes you've already installed Roact Motion, make sure to install it before moving forward!",
+  "source": "@site/docs/docs/Guide/Start.md",
+  "sourceDirName": "docs/Guide",
+  "slug": "/docs/Guide/Start",
+  "permalink": "/InventorySystem/docs/docs/Guide/Start",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "📗Tutorial",
+    "permalink": "/InventorySystem/docs/docs/Guide/TutorialIntroduction"
+  },
+  "next": {
+    "title": "Events",
+    "permalink": "/InventorySystem/docs/docs/Guide/Events"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "doc1/About",
+  "id": "doc1/About",
+  "title": "❓Introduction",
+  "description": "Roact Motion is a library built for specific use within the Roact framework. It was inspired in Flipper, Framer Motion (from React) and the TweenService. These 3 different libraries together along with my need for a proper solution when it comes to animating React brought this library to live! We'll be learning today how to install, get started and use this library to its full potential!",
+  "source": "@site/docs/doc1/About.md",
+  "sourceDirName": "doc1",
+  "slug": "/doc1/About",
+  "permalink": "/InventorySystem/docs/doc1/About",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 1,
+    "id": "About"
+  },
+  "sidebar": "docsSidebar",
+  "next": {
+    "title": "📁Installation",
+    "permalink": "/InventorySystem/docs/doc1/Installation"
+  }
+}

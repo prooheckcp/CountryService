@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Installation",
+  "id": "Installation",
+  "title": "📁Installation",
+  "description": "Example of warning",
+  "source": "@site/docs/Installation.md",
+  "sourceDirName": ".",
+  "slug": "/Installation",
+  "permalink": "/InventorySystem/docs/Installation",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "❓Introduction",
+    "permalink": "/InventorySystem/docs/About"
+  },
+  "next": {
+    "title": "Start",
+    "permalink": "/InventorySystem/docs/Tutorial/Start"
+  }
+}

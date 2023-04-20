@@ -1,0 +1,16 @@
+{
+  "title": "🔗Enums",
+  "description": "This is the index for the enums",
+  "slug": "/category/enums",
+  "permalink": "/InventorySystem/docs/category/enums",
+  "navigation": {
+    "previous": {
+      "title": "Transition⭐",
+      "permalink": "/InventorySystem/docs/api/Classes/Transition"
+    },
+    "next": {
+      "title": "Event 🔗",
+      "permalink": "/InventorySystem/docs/api/enums/Event"
+    }
+  }
+}

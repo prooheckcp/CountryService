@@ -1,0 +1,19 @@
+{
+  "unversionedId": "api/enums/Event",
+  "id": "api/enums/Event",
+  "title": "Event 🔗",
+  "description": "This enum represents an event for a given UI object.",
+  "source": "@site/docs/api/enums/Event.md",
+  "sourceDirName": "api/enums",
+  "slug": "/api/enums/Event",
+  "permalink": "/InventorySystem/docs/api/enums/Event",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "🔗Enums",
+    "permalink": "/InventorySystem/docs/category/enums"
+  }
+}

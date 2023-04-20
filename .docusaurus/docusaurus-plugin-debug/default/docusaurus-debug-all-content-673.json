@@ -1,0 +1,2008 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/InventorySystem/docs",
+          "tagsPath": "/InventorySystem/docs/tags",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "C:\\Users\\user\\Documents\\GameFam\\Docusaurus-MoonWave-Template\\sidebars.js",
+          "contentPath": "C:\\Users\\user\\Documents\\GameFam\\Docusaurus-MoonWave-Template\\docs",
+          "contentPathLocalized": "C:\\Users\\user\\Documents\\GameFam\\Docusaurus-MoonWave-Template\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "docs": [
+            {
+              "unversionedId": "About",
+              "id": "About",
+              "title": "❓Introduction",
+              "description": "This is a template webpage!",
+              "source": "@site/docs/About.md",
+              "sourceDirName": ".",
+              "slug": "/About",
+              "permalink": "/InventorySystem/docs/About",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "displayed_sidebar": "docsSidebar",
+                "sidebar_position": 1,
+                "id": "About"
+              },
+              "sidebar": "docsSidebar",
+              "next": {
+                "title": "📁Installation",
+                "permalink": "/InventorySystem/docs/Installation"
+              }
+            },
+            {
+              "unversionedId": "Installation",
+              "id": "Installation",
+              "title": "📁Installation",
+              "description": "Example of warning",
+              "source": "@site/docs/Installation.md",
+              "sourceDirName": ".",
+              "slug": "/Installation",
+              "permalink": "/InventorySystem/docs/Installation",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "displayed_sidebar": "docsSidebar",
+                "sidebar_position": 2
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "❓Introduction",
+                "permalink": "/InventorySystem/docs/About"
+              },
+              "next": {
+                "title": "Start",
+                "permalink": "/InventorySystem/docs/Tutorial/Start"
+              }
+            },
+            {
+              "unversionedId": "Tutorial/Start",
+              "id": "Tutorial/Start",
+              "title": "Start",
+              "description": "Informative example",
+              "source": "@site/docs/Tutorial/Start.md",
+              "sourceDirName": "Tutorial",
+              "slug": "/Tutorial/Start",
+              "permalink": "/InventorySystem/docs/Tutorial/Start",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "displayed_sidebar": "docsSidebar",
+                "sidebar_position": 1
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "📁Installation",
+                "permalink": "/InventorySystem/docs/Installation"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "docsSidebar": [
+              {
+                "type": "doc",
+                "id": "About"
+              },
+              {
+                "type": "doc",
+                "id": "Installation"
+              },
+              {
+                "type": "doc",
+                "label": "Tutorial",
+                "id": "Tutorial/Start"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/InventorySystem/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-plugin-moonwave": {
+    "moonwave": [
+      {
+        "functions": [
+          {
+            "name": "GetChannel",
+            "desc": "This method gets the reference to a channel",
+            "params": [
+              {
+                "name": "channelId",
+                "desc": "The ID of the channel",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Channel.Channel?"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 68,
+              "path": "src/StarterPlayerScripts/Controllers/ChannelController/init.lua"
+            }
+          },
+          {
+            "name": "WaitForChannel",
+            "desc": "This method waits for the channel until the requested channel is ready to be listened to",
+            "params": [
+              {
+                "name": "channelId",
+                "desc": "The ID of the channel you want to communicate thru",
+                "lua_type": "string"
+              },
+              {
+                "name": "timeout",
+                "desc": "How long until it gives up looking for the channel",
+                "lua_type": "number?"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Channel.Channel?"
+              }
+            ],
+            "function_type": "method",
+            "yields": true,
+            "source": {
+              "line": 83,
+              "path": "src/StarterPlayerScripts/Controllers/ChannelController/init.lua"
+            }
+          },
+          {
+            "name": "_AddChannel",
+            "desc": "Caches the channel after it was created in the server",
+            "params": [
+              {
+                "name": "channel",
+                "desc": "The channel object",
+                "lua_type": "Channel.Channel"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 110,
+              "path": "src/StarterPlayerScripts/Controllers/ChannelController/init.lua"
+            }
+          },
+          {
+            "name": "_RemoveChannel",
+            "desc": "Removes the channel after it was removed in the server",
+            "params": [
+              {
+                "name": "channelId",
+                "desc": "THe channel Id",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 131,
+              "path": "src/StarterPlayerScripts/Controllers/ChannelController/init.lua"
+            }
+          },
+          {
+            "name": "_MessageFromServer",
+            "desc": "Used to listen to messages from the server",
+            "params": [
+              {
+                "name": "channelId",
+                "desc": "The ID of the channel",
+                "lua_type": "string"
+              },
+              {
+                "name": "...",
+                "desc": "",
+                "lua_type": "any"
+              }
+            ],
+            "returns": [],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 149,
+              "path": "src/StarterPlayerScripts/Controllers/ChannelController/init.lua"
+            }
+          }
+        ],
+        "properties": [],
+        "types": [],
+        "name": "ChannelController",
+        "desc": "This contains a channel communication controller. This is used\nby the ItemLifeCycle but it can be used for anything else ",
+        "source": {
+          "line": 25,
+          "path": "src/StarterPlayerScripts/Controllers/ChannelController/init.lua"
+        }
+      },
+      {
+        "functions": [
+          {
+            "name": "CreateChannel",
+            "desc": "Creates a new channel to communicate between the client and the server",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that will own the connection",
+                "lua_type": "Player"
+              },
+              {
+                "name": "channelId",
+                "desc": "The ID of the channel you want to communicate thru",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Channel"
+              }
+            ],
+            "function_type": "method",
+            "realm": [
+              "Server"
+            ],
+            "source": {
+              "line": 55,
+              "path": "src/ServerScriptService/Services/ChannelService/init.lua"
+            }
+          },
+          {
+            "name": "GetChannel",
+            "desc": "This method gets the channel if it exists in the cache",
+            "params": [
+              {
+                "name": "channelId",
+                "desc": "The ID of the channel you want to communicate thru",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Channel?"
+              }
+            ],
+            "function_type": "method",
+            "realm": [
+              "Server"
+            ],
+            "source": {
+              "line": 78,
+              "path": "src/ServerScriptService/Services/ChannelService/init.lua"
+            }
+          },
+          {
+            "name": "WaitForChannel",
+            "desc": "This method waits for the channel until the requested channel is ready to be listened to",
+            "params": [
+              {
+                "name": "channelId",
+                "desc": "The ID of the channel you want to communicate thru",
+                "lua_type": "string"
+              },
+              {
+                "name": "timeout",
+                "desc": "How long until it gives up looking for the channel",
+                "lua_type": "number?"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Channel"
+              }
+            ],
+            "function_type": "method",
+            "realm": [
+              "Server"
+            ],
+            "source": {
+              "line": 92,
+              "path": "src/ServerScriptService/Services/ChannelService/init.lua"
+            }
+          },
+          {
+            "name": "DeleteChannel",
+            "desc": "Removes the channel from the cache",
+            "params": [
+              {
+                "name": "channelId",
+                "desc": "The ID of the channel you want to communicate thru",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "realm": [
+              "Server"
+            ],
+            "source": {
+              "line": 119,
+              "path": "src/ServerScriptService/Services/ChannelService/init.lua"
+            }
+          },
+          {
+            "name": "_Fire",
+            "desc": "Fires the given channel id with the given arguments",
+            "params": [
+              {
+                "name": "channelId",
+                "desc": "The ID of the channel you want to communicate thru",
+                "lua_type": "string"
+              },
+              {
+                "name": "...",
+                "desc": "The remaining arguments that you want to pass on the call",
+                "lua_type": "any"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "realm": [
+              "Server"
+            ],
+            "source": {
+              "line": 159,
+              "path": "src/ServerScriptService/Services/ChannelService/init.lua"
+            }
+          }
+        ],
+        "properties": [],
+        "types": [],
+        "name": "ChannelService",
+        "desc": "This contains a channel communication service. This is used by the ItemLifeCycle but it can be used for anything else ",
+        "source": {
+          "line": 25,
+          "path": "src/ServerScriptService/Services/ChannelService/init.lua"
+        }
+      },
+      {
+        "functions": [
+          {
+            "name": "DropItem",
+            "desc": "Asks the server to drop the given item by its ID",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "The ID of the item you want the player to drop",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 110,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "GetCurrentItems",
+            "desc": "Returns all the items that are currently enabled. It will hide disabled items",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "{[string]: Item.Item}"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 119,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "GetAllItems",
+            "desc": "Returns all the items the player current has in his inventory!",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "{[string]: Item}"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 138,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "GetItem",
+            "desc": "Returns an item from the players inventory by ID",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "The ID of the item you want to get",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Item.Item?"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 149,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "GetEquipped",
+            "desc": "Returns the item that is currently equipped if there's any",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Item?"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 164,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "GetItemCount",
+            "desc": "Returns the amount of items you currently have in your inventory",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "number"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 177,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "AddLifeCycle",
+            "desc": "Adds an item lifecycle into the game system",
+            "params": [
+              {
+                "name": "itemLifeCycle",
+                "desc": "The lifecycle to be cached on the system",
+                "lua_type": "ItemLifeCycle"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 188,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "AddLifeCycles",
+            "desc": "Adds an array of lifecycles into the game system",
+            "params": [
+              {
+                "name": "itemLifeCycle",
+                "desc": "The array of lifecycles to be cached on the system",
+                "lua_type": "{ItemLifeCycle}"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 229,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "PressedNumber",
+            "desc": "Warns the system that a number key has been pressed",
+            "params": [
+              {
+                "name": "keyNumber",
+                "desc": "The number from 0-9",
+                "lua_type": "number"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 247,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_PressedKey",
+            "desc": "Signals to the inventory controller that a key has been pressed",
+            "params": [
+              {
+                "name": "keyCode",
+                "desc": "The KeyCode that was pressed on the keyboard",
+                "lua_type": "Enum.KeyCode"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 267,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_ItemRemoved",
+            "desc": "Method to clear removed item information",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 291,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_GetFirstEmptyIndex",
+            "desc": "Looks for the first empty index that it can use \nO(n^2) complexity so I might have to optimize it in the future",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "number"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 312,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_ItemAdded",
+            "desc": "Method to add item information to the cache",
+            "params": [
+              {
+                "name": "item",
+                "desc": "The Item object that has been added",
+                "lua_type": "Item.Item"
+              }
+            ],
+            "returns": [],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 337,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_ItemDropped",
+            "desc": "TO-DO",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [],
+            "function_type": "method",
+            "source": {
+              "line": 361,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_GetItemStaticData",
+            "desc": "Gets an item static data",
+            "params": [
+              {
+                "name": "itemName",
+                "desc": "The name of the item (This is not the ID)",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Item.Item"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 374,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_GetLifeCycles",
+            "desc": "Gets a lifecycle template with the given item name",
+            "params": [
+              {
+                "name": "itemName",
+                "desc": "The name of the item (This is not the ID)",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "{ItemLifeCycle.ItemLifeCycle}"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 387,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_GetItemLifeCycles",
+            "desc": "Gets a lifecycle by an itemID",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "The ID of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "{ItemLifeCycle.ItemLifeCycle}"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 411,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_SetLifeCycles",
+            "desc": "Adds a lifecycle to a given weapon",
+            "params": [
+              {
+                "name": "item",
+                "desc": "The item object",
+                "lua_type": "Item.Item"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 443,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_RemoveLifeCycles",
+            "desc": "Removes the lifecycle which is attached to a given weapon",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "The ID of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 470,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_ItemUnequipped",
+            "desc": "Called when an item gets unequipped",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 483,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_ItemDataChanged",
+            "desc": "Called when the data of an item changes\n\n\nparam @newValue any -- The new value that replaced the custom value",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "The ID of the unique item",
+                "lua_type": "string"
+              },
+              {
+                "name": "dataIndex",
+                "desc": "The index being used for this custom data",
+                "lua_type": "string"
+              },
+              {
+                "name": "newValue",
+                "desc": "",
+                "lua_type": "any"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 517,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_ItemEquipped",
+            "desc": "Called when the item gets equipped",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "The ID of the unique item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 538,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          },
+          {
+            "name": "_InventoryCleared",
+            "desc": "Called when the inventory is completely cleared",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 566,
+              "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+            }
+          }
+        ],
+        "properties": [],
+        "types": [],
+        "name": "InventoryController",
+        "desc": "This contains the Inventory Controller that manages our client side of the inventory",
+        "source": {
+          "line": 27,
+          "path": "src/StarterPlayerScripts/Controllers/InventoryController/init.lua"
+        }
+      },
+      {
+        "functions": [
+          {
+            "name": "AddLifeCycle",
+            "desc": "Adds an item lifecycle into the game system",
+            "params": [
+              {
+                "name": "itemLifeCycle",
+                "desc": "The lifecycle to be cached on the system",
+                "lua_type": "ItemLifeCycle"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 78,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "AddLifeCycles",
+            "desc": "Adds an array of lifecycles into the game system",
+            "params": [
+              {
+                "name": "itemLifeCycle",
+                "desc": "The array of lifecycles to be cached on the system",
+                "lua_type": "{ItemLifeCycle}"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 104,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "AddItem",
+            "desc": "In order for the inventory system to know that an item exists you must cache its information into the service",
+            "params": [
+              {
+                "name": "item",
+                "desc": "The item you want to cache into the system",
+                "lua_type": "{Item}"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 122,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "AddItems",
+            "desc": "This caches the information of multiple items into the inventory system",
+            "params": [
+              {
+                "name": "items",
+                "desc": "An array of items",
+                "lua_type": "{Item}"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 145,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "GiveItem",
+            "desc": "Gives an item to a player. This should be given by name in order for the system to find it and give it",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that should receive the item",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemName",
+                "desc": "The name of the item you want to give",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "Returns the Item reference of the item that was just created",
+                "lua_type": "Item.Item"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 165,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "RemoveItem",
+            "desc": "Removes an item from the players inventory",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that should receive the item",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemId",
+                "desc": "The name of the item you want to give",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "Returns if the item was correctly removed or not",
+                "lua_type": "boolean"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 194,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "GetPlayerItemByName",
+            "desc": "Returns the first item it can find by the given name",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that owns the item",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemName",
+                "desc": "The name of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "Returns the item if it found one",
+                "lua_type": "Item.Item"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 240,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "RemoveItemByName",
+            "desc": "Removes the first item is can find by the given name",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that owns the item",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemName",
+                "desc": "The name of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 259,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "GetPlayerItem",
+            "desc": "Gives the requested item by ID",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that owns the item",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemId",
+                "desc": "The id of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "Item.Item Returns the item of the player"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 280,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "GetEquippedItem",
+            "desc": "Returns the currently equipped item by the player",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The target player to search for",
+                "lua_type": "Player"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "Returns the item that is currently equipped",
+                "lua_type": "Item.Item?"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 291,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "GetInventory",
+            "desc": "Returns the current full inventory of the player",
+            "params": [
+              {
+                "name": "player",
+                "desc": "",
+                "lua_type": "Player The player that owns the inventory"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "{[string]: Item.Item}"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 308,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "ClearInventory",
+            "desc": "Completely empties the inventory of a player",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that owns the inventory",
+                "lua_type": "Player"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 319,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "DropItem",
+            "desc": "Drops an item a player is holding so that other players can collect it by touching\nthe object in the ground",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that will drop the item",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemId",
+                "desc": "The ID of the item that will be dropped",
+                "lua_type": "string"
+              },
+              {
+                "name": "dropCFrame",
+                "desc": "The position at which the item shoud be dropped. By default it will be in front of the player",
+                "lua_type": "CFrame?"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 339,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "UnequipItem",
+            "desc": "Unequips whatever item the player has equipped if he has any",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that is using an item",
+                "lua_type": "Player"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 407,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "EquipItem",
+            "desc": "Equips a players item",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The target player",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemId",
+                "desc": "The ID of the item you want to equip",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 441,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_GenerateItem",
+            "desc": "Generates a newly created item",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The target player",
+                "lua_type": "Player"
+              },
+              {
+                "name": "item",
+                "desc": "The item object",
+                "lua_type": "Item"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 559,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_CacheItem",
+            "desc": "Caches the item in the players inventory",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that owns the item",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemId",
+                "desc": "The id of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 603,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_GripItem",
+            "desc": "Grips the item to the player",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The player that will grip on the item",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemId",
+                "desc": "The unique ID of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 639,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_GetLifeCycles",
+            "desc": "Gets a lifecycle template with the given item name",
+            "params": [
+              {
+                "name": "itemName",
+                "desc": "The name of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "{ItemLifeCycle}"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 678,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_GetItemLifeCycles",
+            "desc": "Gets a lifecycle by an itemID",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "The ID of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 702,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_SetLifeCycles",
+            "desc": "Adds a lifecycle to a given weapon",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The target player",
+                "lua_type": "Player"
+              },
+              {
+                "name": "item",
+                "desc": "The item object",
+                "lua_type": "Item"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 737,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_RemoveLifeCycles",
+            "desc": "Removes the lifecycle which is attached to a given weapon",
+            "params": [
+              {
+                "name": "itemId",
+                "desc": "The ID of the item",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 760,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_PlayerJoined",
+            "desc": "Fired when a player joins",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The target player",
+                "lua_type": "Player"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 775,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_CharacterAdded",
+            "desc": "Fired when a player respawns",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The target player",
+                "lua_type": "Player"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 800,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_PlayerLeft",
+            "desc": "Fired when a player leaves",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The target player",
+                "lua_type": "Player"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 826,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          },
+          {
+            "name": "_ChangedItemData",
+            "desc": "Updates the client with the required information",
+            "params": [
+              {
+                "name": "player",
+                "desc": "The target player",
+                "lua_type": "Player"
+              },
+              {
+                "name": "itemId",
+                "desc": "The ID of the item",
+                "lua_type": "string"
+              },
+              {
+                "name": "dataIndex",
+                "desc": "The index to identify the custom value",
+                "lua_type": "string"
+              },
+              {
+                "name": "newValue",
+                "desc": "The new item value",
+                "lua_type": "any"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 845,
+              "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+            }
+          }
+        ],
+        "properties": [],
+        "types": [],
+        "name": "InventoryService",
+        "desc": "This contains the Inventory Service that manages our server side of the inventory",
+        "source": {
+          "line": 29,
+          "path": "src/ServerScriptService/Services/InventoryService/init.lua"
+        }
+      },
+      {
+        "functions": [
+          {
+            "name": "Start",
+            "desc": "This method gets called whenever you receive the Item",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 84,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "Equipped",
+            "desc": "Called whenever you equipp the item",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 93,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "Update",
+            "desc": "Called every frame while the item is equipped",
+            "params": [
+              {
+                "name": "deltaTime",
+                "desc": "The gap of time between each rendered frame",
+                "lua_type": "number"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 104,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "Unequipped",
+            "desc": "Called whenever you unequipp the item",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 113,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "Destroy",
+            "desc": "Called when the item is removed from your inventory",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 131,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "DataChanged",
+            "desc": "Called whenever the custom data of the item it is holding changes",
+            "params": [
+              {
+                "name": "dataIndex",
+                "desc": "The index of the data that was changed",
+                "lua_type": "string"
+              },
+              {
+                "name": "newValue",
+                "desc": "The new value to which the data was changed",
+                "lua_type": "any"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 144,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "GetData",
+            "desc": "Gets the custom data of the item by the index",
+            "params": [
+              {
+                "name": "dataIndex",
+                "desc": "",
+                "lua_type": "string The key for the required custom data"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "The data that is contained in the index",
+                "lua_type": "any?"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 155,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "SetData",
+            "desc": "[WARN]\n\nChanging data on the client side won't affect the server-side version of this item",
+            "params": [
+              {
+                "name": "dataIndex",
+                "desc": "The key for the required custom data",
+                "lua_type": "string"
+              },
+              {
+                "name": "newValue",
+                "desc": "",
+                "lua_type": "any"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 168,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "CastPosition",
+            "desc": "Casts from camera to the middle of your screen",
+            "params": [
+              {
+                "name": "respectCanCollide",
+                "desc": "If it should ignore instances that have collisions turned off",
+                "lua_type": "boolean"
+              },
+              {
+                "name": "ignoreList",
+                "desc": "The instances that should be ignored by the raycast",
+                "lua_type": "{Instance}?"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "The hit of the camera raycast",
+                "lua_type": "RayCastResult?"
+              }
+            ],
+            "function_type": "method",
+            "realm": [
+              "Client"
+            ],
+            "source": {
+              "line": 186,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "Drop",
+            "desc": "You can call this method to drop your item",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 215,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "PlayAnimation",
+            "desc": "This plays an animation that you fed into the weapon data with its given index ",
+            "params": [
+              {
+                "name": "name",
+                "desc": "The index for the animations",
+                "lua_type": "string"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "realm": [
+              "Client"
+            ],
+            "source": {
+              "line": 228,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "IsEquipped",
+            "desc": "Checks if the item attached to this lifecycle is equipped or not",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "boolean"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 254,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_StopActionAnimations",
+            "desc": "Stops all action animations",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 265,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_StopCoreAnimations",
+            "desc": "Stops all the core animations",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 279,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_ChangeCore",
+            "desc": "Changes the core animation that should be played",
+            "params": [
+              {
+                "name": "itemAnimation",
+                "desc": "",
+                "lua_type": "ItemAnimation.ItemAnimation"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 292,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_ActivateCore",
+            "desc": "Activate core animation",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 313,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_ChangeEquippedState",
+            "desc": "Changes the equip state",
+            "params": [
+              {
+                "name": "newState",
+                "desc": "",
+                "lua_type": "boolean"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 333,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_Clear",
+            "desc": "Clears the connections of this lifecycle",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 355,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_LoadAnimations",
+            "desc": "Loads and caches animations",
+            "params": [
+              {
+                "name": "dictionary",
+                "desc": "The animation object",
+                "lua_type": "{[string]: string}"
+              },
+              {
+                "name": "targetStore",
+                "desc": "The cache on which it should be stored",
+                "lua_type": "{[string]: string}"
+              }
+            ],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 369,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_SetListeners",
+            "desc": "Sets the listeners to change the animation state of the player",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "source": {
+              "line": 383,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          },
+          {
+            "name": "_SetAnimator",
+            "desc": "Do not call this method. It is used to manage the player animations",
+            "params": [],
+            "returns": [
+              {
+                "desc": "",
+                "lua_type": "()"
+              }
+            ],
+            "function_type": "method",
+            "private": true,
+            "source": {
+              "line": 432,
+              "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+            }
+          }
+        ],
+        "properties": [],
+        "types": [],
+        "name": "ItemLifeCycle",
+        "desc": "ItemLifeCycles are classes that are used to give behavior to your items. The get attached to any item you wish\nand manage it thru events that get called upon certain actions. This lifecycle was inspired in Roact's lifecycle tree",
+        "source": {
+          "line": 41,
+          "path": "src/ReplicatedStorage/InventorySystem/Classes/ItemLifeCycle.lua"
+        }
+      }
+    ]
+  },
+  "docusaurus-lunr-search": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

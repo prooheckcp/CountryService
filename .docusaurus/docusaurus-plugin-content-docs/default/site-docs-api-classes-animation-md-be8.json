@@ -1,0 +1,28 @@
+{
+  "unversionedId": "api/Classes/Animation",
+  "id": "api/Classes/Animation",
+  "title": "Animation⭐",
+  "description": "Summary",
+  "source": "@site/docs/api/Classes/Animation.md",
+  "sourceDirName": "api/Classes",
+  "slug": "/api/Classes/Animation",
+  "permalink": "/InventorySystem/docs/api/Classes/Animation",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "displayed_sidebar": "apiSidebar",
+    "sidebar_position": 1,
+    "title": "Animation⭐"
+  },
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "⭐Classes",
+    "permalink": "/InventorySystem/docs/category/classes"
+  },
+  "next": {
+    "title": "Controller⭐",
+    "permalink": "/InventorySystem/docs/api/Classes/Controller"
+  }
+}

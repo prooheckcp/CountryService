@@ -1,0 +1,26 @@
+{
+  "unversionedId": "doc1/Guide/TutorialIntroduction",
+  "id": "doc1/Guide/TutorialIntroduction",
+  "title": "📗Tutorial",
+  "description": "Grab your notebook and get ready for this step by step guide! In this guide we will be learning how to use RoactMotion!",
+  "source": "@site/docs/doc1/Guide/Introduction.md",
+  "sourceDirName": "doc1/Guide",
+  "slug": "/doc1/Guide/TutorialIntroduction",
+  "permalink": "/InventorySystem/docs/doc1/Guide/TutorialIntroduction",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "id": "TutorialIntroduction"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "📁Installation",
+    "permalink": "/InventorySystem/docs/doc1/Installation"
+  },
+  "next": {
+    "title": "Start",
+    "permalink": "/InventorySystem/docs/doc1/Guide/Start"
+  }
+}

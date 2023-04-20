@@ -1,0 +1,134 @@
+{
+  "/InventorySystem/__docusaurus/debug-183": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---inventory-system-docusaurus-debugf-35-1fb"
+    }
+  },
+  "/InventorySystem/__docusaurus/debug/config-1a1": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---inventory-system-docusaurus-debugf-35-1fb"
+    }
+  },
+  "/InventorySystem/__docusaurus/debug/content-467": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---inventory-system-docusaurus-debugf-35-1fb"
+    },
+    "allContent": "allContent---inventory-system-docusaurus-debug-content-246-8c8"
+  },
+  "/InventorySystem/__docusaurus/debug/globalData-cde": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---inventory-system-docusaurus-debugf-35-1fb"
+    }
+  },
+  "/InventorySystem/__docusaurus/debug/metadata-307": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---inventory-system-docusaurus-debugf-35-1fb"
+    }
+  },
+  "/InventorySystem/__docusaurus/debug/registry-abc": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---inventory-system-docusaurus-debugf-35-1fb"
+    }
+  },
+  "/InventorySystem/__docusaurus/debug/routes-336": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---inventory-system-docusaurus-debugf-35-1fb"
+    }
+  },
+  "/InventorySystem/api/-2d3": {
+    "__comp": "__comp---c-users-user-documents-game-fam-docusaurus-moon-wave-template-node-modules-docusaurus-plugin-moonwave-src-components-redirect-jseca-02c",
+    "__context": {
+      "plugin": "plugin---inventory-system-api-c-9-c-91a"
+    },
+    "sidebarClassNames": "sidebarClassNames---inventory-system-api-01-d-d6b",
+    "pluginOptions": "pluginOptions---inventory-system-api-555-e13"
+  },
+  "/InventorySystem/api/ChannelController-225": {
+    "__comp": "__comp---c-users-user-documents-game-fam-docusaurus-moon-wave-template-node-modules-docusaurus-plugin-moonwave-src-components-lua-class-js-891-5ec",
+    "__context": {
+      "plugin": "plugin---inventory-system-api-c-9-c-91a"
+    },
+    "luaClass": "luaClass---inventory-system-api-channel-controller-72-e-b51",
+    "sidebarClassNames": "sidebarClassNames---inventory-system-api-01-d-d6b",
+    "typeLinks": "typeLinks---inventory-system-api-channel-controller-8-b-8-9b4",
+    "tocData": "tocData---inventory-system-api-channel-controller-55-d-ed8",
+    "options": "pluginOptions---inventory-system-api-555-e13"
+  },
+  "/InventorySystem/api/ChannelService-3b8": {
+    "__comp": "__comp---c-users-user-documents-game-fam-docusaurus-moon-wave-template-node-modules-docusaurus-plugin-moonwave-src-components-lua-class-js-891-5ec",
+    "__context": {
+      "plugin": "plugin---inventory-system-api-c-9-c-91a"
+    },
+    "luaClass": "luaClass---inventory-system-api-channel-service-031-a24",
+    "sidebarClassNames": "sidebarClassNames---inventory-system-api-01-d-d6b",
+    "typeLinks": "typeLinks---inventory-system-api-channel-controller-8-b-8-9b4",
+    "tocData": "tocData---inventory-system-api-channel-service-132-726",
+    "options": "pluginOptions---inventory-system-api-555-e13"
+  },
+  "/InventorySystem/api/InventoryController-17a": {
+    "__comp": "__comp---c-users-user-documents-game-fam-docusaurus-moon-wave-template-node-modules-docusaurus-plugin-moonwave-src-components-lua-class-js-891-5ec",
+    "__context": {
+      "plugin": "plugin---inventory-system-api-c-9-c-91a"
+    },
+    "luaClass": "luaClass---inventory-system-api-inventory-controller-9-b-3-e9c",
+    "sidebarClassNames": "sidebarClassNames---inventory-system-api-01-d-d6b",
+    "typeLinks": "typeLinks---inventory-system-api-channel-controller-8-b-8-9b4",
+    "tocData": "tocData---inventory-system-api-inventory-controllerbb-1-5f0",
+    "options": "pluginOptions---inventory-system-api-555-e13"
+  },
+  "/InventorySystem/api/InventoryService-49c": {
+    "__comp": "__comp---c-users-user-documents-game-fam-docusaurus-moon-wave-template-node-modules-docusaurus-plugin-moonwave-src-components-lua-class-js-891-5ec",
+    "__context": {
+      "plugin": "plugin---inventory-system-api-c-9-c-91a"
+    },
+    "luaClass": "luaClass---inventory-system-api-inventory-servicebee-725",
+    "sidebarClassNames": "sidebarClassNames---inventory-system-api-01-d-d6b",
+    "typeLinks": "typeLinks---inventory-system-api-channel-controller-8-b-8-9b4",
+    "tocData": "tocData---inventory-system-api-inventory-service-955-8fa",
+    "options": "pluginOptions---inventory-system-api-555-e13"
+  },
+  "/InventorySystem/api/ItemLifeCycle-d89": {
+    "__comp": "__comp---c-users-user-documents-game-fam-docusaurus-moon-wave-template-node-modules-docusaurus-plugin-moonwave-src-components-lua-class-js-891-5ec",
+    "__context": {
+      "plugin": "plugin---inventory-system-api-c-9-c-91a"
+    },
+    "luaClass": "luaClass---inventory-system-api-item-life-cycle-414-210",
+    "sidebarClassNames": "sidebarClassNames---inventory-system-api-01-d-d6b",
+    "typeLinks": "typeLinks---inventory-system-api-channel-controller-8-b-8-9b4",
+    "tocData": "tocData---inventory-system-api-item-life-cycle-28-b-74e",
+    "options": "pluginOptions---inventory-system-api-555-e13"
+  },
+  "/InventorySystem/docs-955": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__context": {
+      "plugin": "plugin---inventory-system-docs-5-f-9-e51"
+    },
+    "versionMetadata": "versionMetadata---inventory-system-docs-935-bdf"
+  },
+  "/InventorySystem/docs/About-8d8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---inventory-system-docs-about-974-332"
+  },
+  "/InventorySystem/docs/Installation-df2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---inventory-system-docs-installation-1-ff-27d"
+  },
+  "/InventorySystem/docs/Tutorial/Start-fa9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---inventory-system-docs-tutorial-startc-5-c-af0"
+  },
+  "/InventorySystem/-bd6": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---inventory-system-e-04-6be"
+    },
+    "config": "config---inventory-system-5-e-9-dfe"
+  }
+}

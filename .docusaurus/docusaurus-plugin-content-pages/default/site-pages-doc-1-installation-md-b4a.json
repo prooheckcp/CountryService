@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/InventorySystem/doc1/Installation",
+  "source": "@site/pages/doc1/Installation.md",
+  "title": "📁Installation",
+  "description": "This library is still new and will suffer a lot of tiny changes in the upcoming future. It's highly recommended you install it via Wally to keep up with the updates.",
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 2
+  }
+}

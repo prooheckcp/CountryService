@@ -1,0 +1,28 @@
+{
+  "unversionedId": "api/Classes/Transition",
+  "id": "api/Classes/Transition",
+  "title": "Transition⭐",
+  "description": "Summary",
+  "source": "@site/docs/api/Classes/Transition.md",
+  "sourceDirName": "api/Classes",
+  "slug": "/api/Classes/Transition",
+  "permalink": "/InventorySystem/docs/api/Classes/Transition",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "displayed_sidebar": "apiSidebar",
+    "sidebar_position": 3,
+    "title": "Transition⭐"
+  },
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "Controller⭐",
+    "permalink": "/InventorySystem/docs/api/Classes/Controller"
+  },
+  "next": {
+    "title": "🔗Enums",
+    "permalink": "/InventorySystem/docs/category/enums"
+  }
+}

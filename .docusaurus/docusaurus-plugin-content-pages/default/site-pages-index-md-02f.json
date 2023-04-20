@@ -1,0 +1,8 @@
+{
+  "type": "mdx",
+  "permalink": "/InventorySystem/",
+  "source": "@site/pages/index.md",
+  "title": "InventorySystem",
+  "description": "This is an inventory system to be used by Mafia Tycoon. It will be properly documented so that it can be used by any other project whenever needed.",
+  "frontMatter": {}
+}

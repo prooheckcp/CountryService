@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Tutorial/Start",
+  "id": "Tutorial/Start",
+  "title": "Start",
+  "description": "Informative example",
+  "source": "@site/docs/Tutorial/Start.md",
+  "sourceDirName": "Tutorial",
+  "slug": "/Tutorial/Start",
+  "permalink": "/InventorySystem/docs/Tutorial/Start",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "📁Installation",
+    "permalink": "/InventorySystem/docs/Installation"
+  }
+}

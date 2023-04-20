@@ -1,0 +1,27 @@
+{
+  "unversionedId": "docs/Guide/Animations",
+  "id": "docs/Guide/Animations",
+  "title": "Animations",
+  "description": "Wow, we've already learned a lot so far! But right now you probably still have some questions which hopefully we'll be covering in the following parts of this tutorial! And one of those questions might be, what if I want to play an animation from outside of one of these events? What if I want to call the animation at a specific situation? What if I want to animate a different object from the current one? And the answer to all of those questions are animation objects! Let's see how they work...",
+  "source": "@site/docs/docs/Guide/Animations.md",
+  "sourceDirName": "docs/Guide",
+  "slug": "/docs/Guide/Animations",
+  "permalink": "/InventorySystem/docs/docs/Guide/Animations",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Events",
+    "permalink": "/InventorySystem/docs/docs/Guide/Events"
+  },
+  "next": {
+    "title": "Chained Animations",
+    "permalink": "/InventorySystem/docs/docs/Guide/ChainedAnimations"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "About",
+  "id": "About",
+  "title": "❓Introduction",
+  "description": "This is a template webpage!",
+  "source": "@site/docs/About.md",
+  "sourceDirName": ".",
+  "slug": "/About",
+  "permalink": "/InventorySystem/docs/About",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 1,
+    "id": "About"
+  },
+  "sidebar": "docsSidebar",
+  "next": {
+    "title": "📁Installation",
+    "permalink": "/InventorySystem/docs/Installation"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "⭐Classes",
+  "description": "This is the index for classes",
+  "slug": "/category/classes",
+  "permalink": "/InventorySystem/docs/category/classes",
+  "navigation": {
+    "previous": {
+      "title": "createElement",
+      "permalink": "/InventorySystem/docs/api/createElement"
+    },
+    "next": {
+      "title": "Animation⭐",
+      "permalink": "/InventorySystem/docs/api/Classes/Animation"
+    }
+  }
+}

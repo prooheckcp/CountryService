@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/InventorySystem/test",
+  "source": "@site/pages/test.md",
+  "description": "Hello world!",
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 1,
+    "id": "About"
+  }
+}

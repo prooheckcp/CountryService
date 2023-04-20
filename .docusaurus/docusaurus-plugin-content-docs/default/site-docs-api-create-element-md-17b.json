@@ -1,0 +1,28 @@
+{
+  "unversionedId": "api/createElement",
+  "id": "api/createElement",
+  "title": "createElement",
+  "description": "This is the main and only function that exists. It returns a Roact.Element with the given parameters. You'll use it the same exact way as you would use Roact.createElement with the difference that you can feed it a fourth argument to specify how would you prefer to see it being animated.",
+  "source": "@site/docs/api/createElement.md",
+  "sourceDirName": "api",
+  "slug": "/api/createElement",
+  "permalink": "/InventorySystem/docs/api/createElement",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "displayed_sidebar": "apiSidebar",
+    "title": "createElement",
+    "sidebar_position": 1
+  },
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "❓Introduction",
+    "permalink": "/InventorySystem/docs/api/apiIntroduction"
+  },
+  "next": {
+    "title": "⭐Classes",
+    "permalink": "/InventorySystem/docs/category/classes"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "api/Classes/Controller",
+  "id": "api/Classes/Controller",
+  "title": "Controller⭐",
+  "description": "Summary",
+  "source": "@site/docs/api/Classes/Controller.md",
+  "sourceDirName": "api/Classes",
+  "slug": "/api/Classes/Controller",
+  "permalink": "/InventorySystem/docs/api/Classes/Controller",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "displayed_sidebar": "apiSidebar",
+    "sidebar_position": 2,
+    "title": "Controller⭐"
+  },
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "Animation⭐",
+    "permalink": "/InventorySystem/docs/api/Classes/Animation"
+  },
+  "next": {
+    "title": "Transition⭐",
+    "permalink": "/InventorySystem/docs/api/Classes/Transition"
+  }
+}

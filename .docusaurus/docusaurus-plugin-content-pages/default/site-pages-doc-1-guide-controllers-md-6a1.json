@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/InventorySystem/doc1/Guide/Controllers",
+  "source": "@site/pages/doc1/Guide/Controllers.md",
+  "title": "Controllers",
+  "description": "We're almost done with the basics... There's only 1 more thing that you should be aware of! And that one thing is controllers. The same way we created transitions and animations you can also create 1 controller to manage animations at run-time. Let's start by creating a controller!",
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 5,
+    "title": "Controllers"
+  }
+}

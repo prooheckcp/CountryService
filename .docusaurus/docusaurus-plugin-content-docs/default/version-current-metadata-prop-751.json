@@ -1,0 +1,52 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "docsSidebar": [
+      {
+        "type": "link",
+        "label": "❓Introduction",
+        "href": "/InventorySystem/docs/About",
+        "docId": "About"
+      },
+      {
+        "type": "link",
+        "label": "📁Installation",
+        "href": "/InventorySystem/docs/Installation",
+        "docId": "Installation"
+      },
+      {
+        "type": "link",
+        "label": "Tutorial",
+        "href": "/InventorySystem/docs/Tutorial/Start",
+        "docId": "Tutorial/Start"
+      }
+    ]
+  },
+  "docs": {
+    "About": {
+      "id": "About",
+      "title": "❓Introduction",
+      "description": "This is a template webpage!",
+      "sidebar": "docsSidebar"
+    },
+    "Installation": {
+      "id": "Installation",
+      "title": "📁Installation",
+      "description": "Example of warning",
+      "sidebar": "docsSidebar"
+    },
+    "Tutorial/Start": {
+      "id": "Tutorial/Start",
+      "title": "Start",
+      "description": "Informative example",
+      "sidebar": "docsSidebar"
+    }
+  }
+}

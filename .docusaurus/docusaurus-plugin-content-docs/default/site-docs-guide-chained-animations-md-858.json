@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Guide/ChainedAnimations",
+  "id": "Guide/ChainedAnimations",
+  "title": "Chained Animations",
+  "description": "Wow we've already been thru a lot together! But now you're probably thinking, what about chained animations? How would I approach this?",
+  "source": "@site/docs/Guide/ChainedAnimations.md",
+  "sourceDirName": "Guide",
+  "slug": "/Guide/ChainedAnimations",
+  "permalink": "/InventorySystem/docs/Guide/ChainedAnimations",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 4,
+    "title": "Chained Animations"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Animations",
+    "permalink": "/InventorySystem/docs/Guide/Animations"
+  },
+  "next": {
+    "title": "Controllers",
+    "permalink": "/InventorySystem/docs/Guide/Controllers"
+  }
+}

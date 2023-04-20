@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/InventorySystem/doc1/Guide/Events",
+  "source": "@site/pages/doc1/Guide/Events.md",
+  "description": "Roact Motion triggers its animations in 3 different ways: Events, thru an animation controller or thru an animation object. We'll start by looking into events! In order to use events we use the `RoactMotion.Event` reference. Let's start by adding a hovering event.",
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 2
+  }
+}

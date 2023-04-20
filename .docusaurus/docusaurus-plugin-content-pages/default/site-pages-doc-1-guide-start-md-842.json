@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/InventorySystem/doc1/Guide/Start",
+  "source": "@site/pages/doc1/Guide/Start.md",
+  "description": "This Guide assumes you've already installed Roact Motion, make sure to install it before moving forward!",
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 1
+  }
+}

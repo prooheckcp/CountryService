@@ -1,0 +1,46 @@
+.heroBanner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.811)), url(../../static/img/BannerPicture.jpg);
+  background-size:cover;
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.bigText{
+  font-size: 40px;
+  color:rgb(255, 255, 255);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow:
+  3px 3px 0 #000,
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.smallText {
+  font-size: 20px;
+  color:whitesmoke;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  text-shadow:
+  1.5px 1.5px 0 #000,
+  -0.7px -0.7px 0 #000,  
+  0.7px -0.7px 0 #000,
+  -0.7px 0.7px 0 #000,
+  0.7px 0.7px 0 #000;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

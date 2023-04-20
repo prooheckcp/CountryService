@@ -1,0 +1,24 @@
+{
+  "unversionedId": "doc1/Guide/Controllers",
+  "id": "doc1/Guide/Controllers",
+  "title": "Controllers",
+  "description": "We're almost done with the basics... There's only 1 more thing that you should be aware of! And that one thing is controllers. The same way we created transitions and animations you can also create 1 controller to manage animations at run-time. Let's start by creating a controller!",
+  "source": "@site/docs/doc1/Guide/Controllers.md",
+  "sourceDirName": "doc1/Guide",
+  "slug": "/doc1/Guide/Controllers",
+  "permalink": "/InventorySystem/docs/doc1/Guide/Controllers",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "displayed_sidebar": "docsSidebar",
+    "sidebar_position": 5,
+    "title": "Controllers"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Chained Animations",
+    "permalink": "/InventorySystem/docs/doc1/Guide/ChainedAnimations"
+  }
+}
