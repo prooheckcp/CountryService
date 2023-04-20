@@ -4,16 +4,11 @@
 [Documentation](https://prooheckcp.github.io/CountryService/) | [Source](https://github.com/prooheckcp/CountryService)
 
 #### 🤓 Introduction
-A long time ago I came across an issue in one of my games in which I needed the information about a user's country. I wanted to make country-wise leaderboards. Sounds easy right? Yes, I would need to just use the LocalizationService and make the leaderboards by their country code! There was only one problem… The LocalizationService only returns the country code, nothing else, no flag, no country name, no nothing else!
+CountryService is a small Library that allows you to obtain the information about a players country. You can get their Country name, country emoji and even country flag! The LocalizationService only returns the country code, nothing else, no flag, no country name, no nothing else hence why I decided to do this!
+
 ```lua
 LocalizationService:GetCountryRegionForPlayerAsync(player) -- Only returns "US"
 ```
-
-And that’s when I decided to do “ProoCountry”, an old library I did when I was still new to Roblox scripting that would return the country name and flag.
-
-  
-
-2 years later I went across the same issue and was thinking about using ProoCountry but the code looked so messy and limited that I decided to just make a new one, CountryService! This library allows you to get a player's country, country name, country flag emoji, and even the country's flag ID to use on ImageLabels, ImageButtons, and even Decals!
 
 ![](https://cdn.discordapp.com/attachments/670023265455964198/1098670837013422132/RobloxScreenShot20230420_000142829.png)
 #### 🔨 Code Example
