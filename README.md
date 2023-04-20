@@ -82,8 +82,10 @@ Want to see it in action? I set up a copy unlocked place! [CountryService - Exam
 ### 📁Download
 There's 3 ways you can get this library so feel free to go with which ever you're the most comfortable.
 
-Roblox Studio Model: [https://www.roblox.com/library/13194747001/CountryService-V-1-0](https://www.roblox.com/library/13194747001/CountryService-V-1-0 "https://www.roblox.com/library/13194747001/CountryService-V-1-0")
+Roblox Studio Model: https://www.roblox.com/library/13194747001/CountryService-V-1-0
+
 Wally: https://wally.run/package/prooheckcp/countryservice
-GitHub Release: [prooheckcp/CountryService: Used to manage countries stuff (github.com)](https://github.com/prooheckcp/CountryService)
+
+GitHub Release: https://github.com/prooheckcp/CountryService
 
 Please leave a star ⭐ in the [GitHub](https://github.com/prooheckcp/CountryService) and or a heart on this post ❤️, it takes less than 10 seconds and it helps me a lot!
