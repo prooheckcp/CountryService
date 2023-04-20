@@ -1,29 +1,4 @@
 {
-  "name": "CountryService",
-  "tree": {
-    "$className": "DataModel",
-
-    "ReplicatedStorage": {
-      "$ignoreUnknownInstances": true,
-      "CountryService": {
-        "$path": "CountryService"
-      }
-    },
-
-    "ServerScriptService": {
-      "$ignoreUnknownInstances": true,
-      "Server": {
-        "$path": "src/server"
-      }
-    },
-
-    "StarterPlayer": {
-      "$ignoreUnknownInstances": true,
-      "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
-        }
-      }
-    }
-  }
+    "name": "CountryService",
+    "tree": {"$path":"CountryService"}
 }
