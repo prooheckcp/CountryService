@@ -89,6 +89,28 @@ function CountryService:GetMyCountry(): Country.Country?
 end
 
 --[=[
+    Gets the country code of the player. Only works when called from a client script
+
+    @client
+    
+    @return string -- Country Code
+]=]
+function CountryService:GetMyCountryCode(): string
+    return self._yourCode
+end
+
+--[=[
+    Gets the country code by the player object
+
+    @param player Player
+
+    @return string -- Country Code
+]=]
+function CountryService:GetPlayerCountryCode(player: Player): string
+    return self._cachedCodes[player] or DEFAULT_COUNTRY_CODE
+end
+
+--[=[
     Gets a country object by the player object
 
     @param player Player
