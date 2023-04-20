@@ -111,6 +111,7 @@ end
 --[=[
     Used to grab the player country
 
+    @private
     @param player Player
 
     @return ()
@@ -132,6 +133,15 @@ function CountryService:_PlayerRemoved(player: Player): ()
     self._cachedCodes[player] = nil
 end
 
+--[=[
+    Gets the code from a players country
+
+    @private
+
+    @param player Player
+
+    @return string
+]=]
 function CountryService:_GetCountryCode(player: Player): string
     local finalCode: string? = nil
     local attempts: number = 0
