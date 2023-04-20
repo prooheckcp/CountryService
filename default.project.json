@@ -1,0 +1,4 @@
+{
+    "name": "countryservice",
+    "tree": {"$path":"CountryService"}
+}
