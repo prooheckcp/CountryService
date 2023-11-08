@@ -24,23 +24,19 @@ local Country = {}
 Country.__index = Country
 
 --[=[
-    Creates a new instance of a country
-
-    @return Country
-]=]
---[=[
     Contains the name of the country e.g **US = "United States"**
     @prop name string
 
     @within Country
 ]=]
-
+Country.name = ""
 --[=[
     Contains the emoji of the country e.g **US = 🇺🇸**
     @prop emoji string
 
     @within Country
 ]=]
+Country.emoji = ""
 
 --[=[
     Contains the flag of the emoji, it can be used for ImageLabels, Decals and ImageButtons!
@@ -49,7 +45,22 @@ Country.__index = Country
 
     @within Country
 ]=]
+Country.decal = ""
 
+--[=[
+    Creates a new instance of a country
+
+    E.g
+    ```lua
+    local Portugal = Country.new()
+    Portugal.name = "Portugal"
+    Portugal.emoji = "🇵🇹"
+    ```
+
+    @private
+
+    @return Country
+]=]
 function Country.new(): Country
     local self = setmetatable({}, Country)
 

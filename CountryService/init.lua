@@ -15,26 +15,36 @@ local MAXIMUM_ATTEMPTS: number = 5
     every country that exists
 ]=]
 local CountryService = {}
+--[=[
+    @prop Country Country
+    @within CountryService
+
+    Contains the Country class used to retain country data
+]=]
 CountryService.Country = Country -- The class for the country containers
-CountryService.__Index = CountryService
-CountryService._yourCode = nil :: string? -- Client Only
-CountryService._cachedCodes = nil :: {[Player]: string}?
+CountryService.__index = CountryService
+--[=[
+    @prop _yourCode string
+    @within CountryService
+    @private
+    @client
 
+    Contains the Country class used to retain country data
+]=]
+CountryService._yourCode = "" :: string
+--[=[
+    @prop _cachedCodes {[Player]: string}
+    @within CountryService
+    @private
+
+    Contains the Country class used to retain country data
+]=]
+CountryService._cachedCodes = {} :: {[Player]: string}
+
+--[=[
+    Initializes events and ca
+]=]
 function CountryService:_Init(): ()
-    if RunService:IsServer() then
-        self:_InitServer()
-    elseif RunService:IsClient() then
-        self:_InitClient()
-    end
-end
-
-function CountryService:_InitServer(): ()
-    self._cachedCodes = {}
-
-    for _, player: Player in Players:GetPlayers() do
-        self:_PlayerAdded(player)
-    end
-
     Players.PlayerAdded:Connect(function(player: Player)
         self:_PlayerAdded(player)
     end)
@@ -42,8 +52,21 @@ function CountryService:_InitServer(): ()
     Players.PlayerRemoving:Connect(function(player: Player)
         self:_PlayerRemoved(player)
     end)
+
+    for _, player: Player in Players:GetPlayers() do
+        self:_PlayerAdded(player)
+    end
+
+    if RunService:IsClient() then
+        self:_InitClient()
+    end
 end
 
+--[=[
+    Inits necessary code on the client-side
+
+    @return ()
+]=]
 function CountryService:_InitClient(): ()
     self._yourCode = self:_GetCountryCode(Players.LocalPlayer)
 end

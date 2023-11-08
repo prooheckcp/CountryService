@@ -1,4 +1,8 @@
-local countries = {
+local Country = require(script.Parent.Country)
+
+type Country = Country.Country
+
+local countries: {[string]: Country} = {
 	['US'] = { emoji = "🇺🇸", name = 'United States', decal = 'rbxassetid://6764359716' },
 	['GB'] = { emoji = "🇬🇧", name = 'United Kingdom', decal = 'rbxassetid://6764345672' },
 	['CA'] = { emoji = "🇨🇦", name = 'Canada', decal = 'rbxassetid://6764337760' },

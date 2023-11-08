@@ -55,6 +55,7 @@ end
 
 --Set country tags
 Players.PlayerAdded:Connect(function(player: Player)
+
     player.CharacterAdded:Connect(function(character: Model)
         local playerCountry: CountryService.Country = CountryService:GetPlayerCountry(player)
         local label: string = `{playerCountry.emoji} {player.Name} | {playerCountry.name}`
