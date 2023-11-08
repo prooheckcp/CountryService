@@ -17,3 +17,10 @@ local countryInfo: TextLabel = container:WaitForChild("CountryInfo") :: TextLabe
 
 countryFlag.Image = country.decal
 countryInfo.Text = `Hi! Welcome from {country.name} {country.emoji}`
+
+-- TESTING
+print(CountryService:GetCountryByCode("PT"))
+print(CountryService:GetMyCountry())
+print(CountryService:GetMyCountryCode())
+print(CountryService:GetPlayerCountry(localPlayer))
+print(CountryService:GetPlayerCountryCode(localPlayer))
