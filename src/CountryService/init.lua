@@ -7,6 +7,7 @@ local Country = require(script.Country)
 
 local DEFAULT_COUNTRY_CODE: string = "US"
 local MAXIMUM_ATTEMPTS: number = 5
+local TIMEOUT: number = 5
 
 --[=[
     @class CountryService
@@ -42,7 +43,11 @@ CountryService._yourCode = "" :: string
 CountryService._cachedCodes = {} :: {[Player]: string}
 
 --[=[
-    Initializes events and ca
+    Initializes the events for CountryService and loads the country codes
+
+    @private
+
+    @return ()
 ]=]
 function CountryService:_Init(): ()
     Players.PlayerAdded:Connect(function(player: Player)
@@ -65,6 +70,8 @@ end
 --[=[
     Inits necessary code on the client-side
 
+    @private
+
     @return ()
 ]=]
 function CountryService:_InitClient(): ()
@@ -72,36 +79,64 @@ function CountryService:_InitClient(): ()
 end
 
 --[=[
-    Returns the country object by the country code
+    Returns the country object by the country code. By default this returns the United States
+    in case it cannot find any country with the given code
+
+    ```lua
+    local CountryService = require(ReplicatedStorage.CountryService)
+
+    local country: CountryService.Country = CountryService:GetCountryByCode("US")
+    print(country.name) -- United States
+    print(country.emoji) -- 🇺🇸
+    print(country.decal) -- rbxassetid://123456789
+    ```
 
     @param countryCode string
 
     @return Country
 ]=]
-function CountryService:GetCountryByCode(countryCode: string): Country.Country
+function CountryService:GetCountryByCode(countryCode: string): Country
     return Data[countryCode] or Data[DEFAULT_COUNTRY_CODE]
 end
 
 --[=[
     Returns all the countries that exist in a dictionary format
 
+    ```lua
+
+    local CountryService = require(ReplicatedStorage.CountryService)
+
+    local countries: {[string]: CountryService.Country} = CountryService:GetAllCountries()
+
+    for code, country: CountryService.Country in countries do
+        print(code, country.name) -- Will print every existing name and code
+    end
+    ```
+
     @return {[string]: Country}
 ]=]
-function CountryService:GetAllCountries(): {[string]: Country.Country}
+function CountryService:GetAllCountries(): {[string]: Country}
     return Data
 end
 
 --[=[
     Returns your own Country. Only works when called from a client script
 
+    ```lua
+    local CountryService = require(ReplicatedStorage.CountryService)
+
+    local country: CountryService.Country = CountryService:GetMyCountry()
+    print(country.name) -- United States
+    ```
+
     @client
     @yields
 
     @return Country?
 ]=]
-function CountryService:GetMyCountry(): Country.Country?
+function CountryService:GetMyCountry(): Country?
     if RunService:IsServer() then
-        return error(":GetMyCountry() can only be called from a local script")
+        return error(":GetMyCountry() can only be called from a local script", 2)
     end
 
     while not self._yourCode do -- We want to wait for the user to load
@@ -114,7 +149,15 @@ end
 --[=[
     Gets the country code of the player. Only works when called from a client script
 
+    ```lua
+    local CountryService = require(ReplicatedStorage.CountryService)
+
+    local countryCode: string = CountryService:GetMyCountryCode()
+    print(countryCode) -- US
+    ```
+
     @client
+    @yields
     
     @return string -- Country Code
 ]=]
@@ -124,6 +167,13 @@ end
 
 --[=[
     Gets the country code by the player object
+
+    ```lua
+    local CountryService = require(ReplicatedStorage.CountryService)
+
+    local countryCode: string = CountryService:GetPlayerCountryCode(player)
+    print(countryCode) -- US
+    ```
 
     @param player Player
 
@@ -136,12 +186,19 @@ end
 --[=[
     Gets a country object by the player object
 
+    ```lua
+    local CountryService = require(ReplicatedStorage.CountryService)
+
+    local country: CountryService.Country = CountryService:GetPlayerCountry(player)
+    print(country.name) -- United States
+    ```
+
     @param player Player
     @yields
 
     @return Country
 ]=]
-function CountryService:GetPlayerCountry(player: Player): Country.Country
+function CountryService:GetPlayerCountry(player: Player): Country
     while not self._cachedCodes[player] do -- We want to wait for the user to load
         if not Players:FindFirstChild(player.Name) then -- Check if the user is even online
             break
@@ -211,6 +268,33 @@ function CountryService:_GetCountryCode(player: Player): string
 
 
     return finalCode or DEFAULT_COUNTRY_CODE
+end
+
+--[=[
+    Waits for the player code to be retrieved
+
+    @private
+
+    @param player Player
+
+    @return string?
+]=]
+function CountryService:_WaitForPlayerCode(player: Player): string?
+    local timer: number = 0
+    repeat
+        if not Players:FindFirstChild(player.Name) then -- Check if the user is even online
+            return nil
+        end
+
+        if self._cachedCodes[player] then
+            return self._cachedCodes[player]
+        end
+
+        timer += task.wait()
+    until
+        timer >= TIMEOUT
+
+    return nil
 end
 
 CountryService:_Init()

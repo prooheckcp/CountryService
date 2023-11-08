@@ -71,6 +71,6 @@ function Country.new(): Country
     return self
 end
 
-export type Country = typeof(Country.new())
+export type Country = typeof(Country)
 
 return Country
