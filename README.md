@@ -1,86 +1,40 @@
+![](https://cdn.discordapp.com/attachments/670023265455964198/1171790205322281021/CountryServiceLogo.png?ex=655df5ab&is=654b80ab&hm=d5f7c6ce9f6fdf690723d9a21bf804604da55efd2dd62957b6f61ebb7a882508&)
 
-# CountryService 🏴󠁧󠁢󠁥󠁮󠁧󠁿
-
-[Documentation](https://prooheckcp.github.io/CountryService/) | [Source](https://github.com/prooheckcp/CountryService)
-
-#### 🤓 Introduction
 CountryService is a small Library that allows you to obtain the information about a players country. You can get their Country name, country emoji and even country flag! The LocalizationService only returns the country code, nothing else, no flag, no country name, no nothing else hence why I decided to do this!
 
-```lua
-LocalizationService:GetCountryRegionForPlayerAsync(player) -- Only returns "US"
+## 📦 Installing
+
+CountryService can be installed in different ways, depending on your project's needs. Choose the method that suits you best:
+
+
+### 🐶 Wally
+<a href="https://wally.run/package/prooheckcp/countryservice">Watch wally's page</a>
+
+```
+countryservice = "prooheckcp/countryservice@>0.0.0, <10.0.0"
 ```
 
-![](https://cdn.discordapp.com/attachments/670023265455964198/1098670837013422132/RobloxScreenShot20230420_000142829.png)
-#### 🔨 Code Example
-Here I will be showing some examples on how to use the CountryService.
 
-CountryService works on both the Client and Server side. Here are two examples, 1 for each side.
+### 🔨Studio
+<a href="https://www.roblox.com/library/13194747001">Get the Roblox Model</a>
 
-**Client Example (LocalScript)**
-```lua
-local  ReplicatedStorage = game:GetService("ReplicatedStorage")
-local  Players = game:GetService("Players")
 
-local  CountryService = require(ReplicatedStorage.CountryService)
+### 🐙GitHub
+<a href="https://github.com/prooheckcp/CountryService/releases">Download from Github Releases</a>
 
-local  localPlayer: Player = Players.LocalPlayer
-local  playerGui: PlayerGui = localPlayer.PlayerGui
 
---Gets the country of the player
-local  country = CountryService:GetMyCountry()
+# 📚Start Learning
 
---Set the UI
-local  screenGui: ScreenGui = playerGui:WaitForChild("Country") :: ScreenGui
-local  container: Frame = screenGui:WaitForChild("Container") :: Frame
+You can start learning in the docs page! https://prooheckcp.github.io/CountryService/docs/intro
 
-local  countryFlag: ImageLabel = container:WaitForChild("CountryFlag") :: ImageLabel
-local  countryInfo: TextLabel = container:WaitForChild("CountryInfo") :: TextLabel
 
-countryFlag.Image = country.decal -- Uses the country flag
+# ⭐ Contributing
+Please leave a star on [GitHub](https://github.com/prooheckcp/CountryService), it helps a lot!
 
-countryInfo.Text = `Hi! Welcome from {country.name}  {country.emoji}` -- Uses the country name and emoji
-```
-**Server Example (Script)**
-```lua
-local  ReplicatedStorage = game:GetService("ReplicatedStorage")
-local  Players = game:GetService("Players")
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-local  CountryService = require(ReplicatedStorage.CountryService)
---Set country tags
-Players.PlayerAdded:Connect(function(player: Player)
-	player.CharacterAdded:Connect(function(character: Model)
-		local  playerCountry = CountryService:GetPlayerCountry(player)
-		local  label: string = `{playerCountry.emoji}  {player.Name} | {playerCountry.name}`
-		local  newGui: BillboardGui = template:Clone()
-		local  countryInfo: TextLabel = newGui:WaitForChild("CountryInfo") :: TextLabel
+Please make sure to update tests as appropriate.
 
-		countryInfo.Text = label
-
-		newGui.Parent = character.PrimaryPart
-	end)
-end)
-```
-
-### 🍪Features
-
- - **Images, Decals and ImageButtons**
- - **Emojis**
- - **Country Name**
- - **Both Server and Client Sided**
- - **Support for types**
-
-```lua
-local  playerCountry: CountryService.Country = CountryService:GetPlayerCountry(player)
-```
-### 🏠Example Place
-Want to see it in action? I set up a copy unlocked place! [CountryService - Example Place - Roblox](https://www.roblox.com/games/13186743835/CountryService-Example-Place)
-### 📁Download
-There's 3 ways you can get this library so feel free to go with which ever you're the most comfortable.
-
-Roblox Studio Model: https://www.roblox.com/library/13194747001/CountryService-V-1-0
-
-Wally: https://wally.run/package/prooheckcp/countryservice
-
-GitHub Release: https://github.com/prooheckcp/CountryService
-
-Please leave a star ⭐ in the [GitHub](https://github.com/prooheckcp/CountryService) and or a heart on this post ❤️, it takes less than 10 seconds and it helps me a lot!
+# 📄 License
+[MIT](https://choosealicense.com/licenses/mit/)

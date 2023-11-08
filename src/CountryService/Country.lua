@@ -24,32 +24,53 @@ local Country = {}
 Country.__index = Country
 
 --[=[
-    Creates a new instance of a country
+    The code of the country e.g **US**
+    
+    @prop Code string
 
-    @return Country
+    @within Country
 ]=]
+Country.Code = ""
+
 --[=[
     Contains the name of the country e.g **US = "United States"**
-    @prop name string
+    @prop Name string
 
     @within Country
 ]=]
-
+Country.Name = ""
 --[=[
     Contains the emoji of the country e.g **US = 🇺🇸**
-    @prop emoji string
+
+    @prop Emoji string
 
     @within Country
 ]=]
+Country.Emoji = ""
 
 --[=[
     Contains the flag of the emoji, it can be used for ImageLabels, Decals and ImageButtons!
     
-    @prop decal string
+    @prop Decal string
 
     @within Country
 ]=]
+Country.Decal = ""
 
+--[=[
+    Creates a new instance of a country
+
+    E.g
+    ```lua
+    local Portugal = Country.new()
+    Portugal.name = "Portugal"
+    Portugal.emoji = "🇵🇹"
+    ```
+
+    @private
+
+    @return Country
+]=]
 function Country.new(): Country
     local self = setmetatable({}, Country)
 
@@ -60,6 +81,6 @@ function Country.new(): Country
     return self
 end
 
-export type Country = typeof(Country.new())
+export type Country = typeof(Country)
 
 return Country
