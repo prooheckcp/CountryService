@@ -25,27 +25,28 @@ Country.__index = Country
 
 --[=[
     Contains the name of the country e.g **US = "United States"**
-    @prop name string
+    @prop Name string
 
     @within Country
 ]=]
-Country.name = ""
+Country.Name = ""
 --[=[
     Contains the emoji of the country e.g **US = 🇺🇸**
-    @prop emoji string
+
+    @prop Emoji string
 
     @within Country
 ]=]
-Country.emoji = ""
+Country.Emoji = ""
 
 --[=[
     Contains the flag of the emoji, it can be used for ImageLabels, Decals and ImageButtons!
     
-    @prop decal string
+    @prop Decal string
 
     @within Country
 ]=]
-Country.decal = ""
+Country.Decal = ""
 
 --[=[
     Creates a new instance of a country

@@ -5,6 +5,7 @@ local Players = game:GetService("Players")
 local Data = require(script.Data)
 local Country = require(script.Country)
 
+local COUNTRY_ATTRIBUTE: string = "Country_Code"
 local DEFAULT_COUNTRY_CODE: string = "US"
 local MAXIMUM_ATTEMPTS: number = 5
 local TIMEOUT: number = 5
@@ -25,15 +26,6 @@ local CountryService = {}
 CountryService.Country = Country -- The class for the country containers
 CountryService.__index = CountryService
 --[=[
-    @prop _yourCode string
-    @within CountryService
-    @private
-    @client
-
-    Contains the Country class used to retain country data
-]=]
-CountryService._yourCode = "" :: string
---[=[
     @prop _cachedCodes {[Player]: string}
     @within CountryService
     @private
@@ -50,20 +42,32 @@ CountryService._cachedCodes = {} :: {[Player]: string}
     @return ()
 ]=]
 function CountryService:_Init(): ()
+    if RunService:IsClient() then
+        self:_InitClient()
+    elseif RunService:IsServer() then
+        self:_InitServer()
+    end
+end
+
+--[=[
+    Inits necessary code on the server-side
+
+    @private
+    @server
+
+    @return ()
+]=]
+function CountryService:_InitServer()
     Players.PlayerAdded:Connect(function(player: Player)
-        self:_PlayerAdded(player)
+        self:_ServerPlayerAdded(player)
     end)
 
     Players.PlayerRemoving:Connect(function(player: Player)
-        self:_PlayerRemoved(player)
+        self:_ServerPlayerAdded(player)
     end)
 
     for _, player: Player in Players:GetPlayers() do
-        self:_PlayerAdded(player)
-    end
-
-    if RunService:IsClient() then
-        self:_InitClient()
+        self:_ServerPlayerAdded(player)
     end
 end
 
@@ -71,11 +75,22 @@ end
     Inits necessary code on the client-side
 
     @private
+    @client
 
     @return ()
 ]=]
 function CountryService:_InitClient(): ()
-    self._yourCode = self:_GetCountryCode(Players.LocalPlayer)
+    Players.PlayerAdded:Connect(function(player: Player)
+        self:_ClientPlayerAdded(player)
+    end)
+
+    Players.PlayerRemoving:Connect(function(player: Player)
+        self:_ClientPlayerAdded(player)
+    end)
+
+    for _, player: Player in Players:GetPlayers() do
+        self:_ClientPlayerAdded(player)
+    end
 end
 
 --[=[
@@ -139,11 +154,7 @@ function CountryService:GetMyCountry(): Country?
         return error(":GetMyCountry() can only be called from a local script", 2)
     end
 
-    while not self._yourCode do -- We want to wait for the user to load
-        task.wait()
-    end
-
-    return self:GetCountryByCode(self._yourCode)
+    return self:GetPlayerCountry(Players.LocalPlayer)
 end
 
 --[=[
@@ -162,7 +173,7 @@ end
     @return string -- Country Code
 ]=]
 function CountryService:GetMyCountryCode(): string
-    return self._yourCode
+    return self:GetPlayerCountryCode(Players.LocalPlayer)
 end
 
 --[=[
@@ -198,28 +209,35 @@ end
 
     @return Country
 ]=]
-function CountryService:GetPlayerCountry(player: Player): Country
-    while not self._cachedCodes[player] do -- We want to wait for the user to load
-        if not Players:FindFirstChild(player.Name) then -- Check if the user is even online
-            break
-        end
-
-        task.wait()
-    end
-    
-    return self:GetCountryByCode(self._cachedCodes[player])
+function CountryService:GetPlayerCountry(player: Player): Country?
+    return self:GetCountryByCode(self:_WaitForPlayerCode(player))
 end
 
 --[=[
     Used to grab the player country
 
     @private
+    @server
     @param player Player
 
     @return ()
 ]=]
-function CountryService:_PlayerAdded(player: Player): ()
+function CountryService:_ServerPlayerAdded(player: Player): ()
     self._cachedCodes[player] = self:_GetCountryCode(player)
+    player:SetAttribute(COUNTRY_ATTRIBUTE, self._cachedCodes[player])
+end
+
+--[=[
+    Used to grab the player country
+
+    @private
+    @server
+    @param player Player
+
+    @return ()
+]=]
+function CountryService:_ClientPlayerAdded(player: Player): ()
+
 end
 
 --[=[
