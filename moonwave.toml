@@ -1,6 +1,5 @@
 [docusaurus]
-onBrokenLinks = "throw"
-onBrokenMarkdownLinks = "warn"
-favicon = ""
+favicon = "/favicon/favicon-32x32.png"
+
 [footer]
 copyright = "Copyright © 2023 prooheckcp. Built with Moonwave and Docusaurus"

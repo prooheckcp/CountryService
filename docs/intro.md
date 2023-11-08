@@ -4,7 +4,7 @@ sidebar_label: "🤔About"
 ---
 # 🤔About
 
-RobloxStateMachine is a lightweight library that simplifies the creation and management of state machines. It allows you create States and Transitions which are reusable and can contain/interact with different data.
+CountryService is a lightweight library that allows you to easily get information about a given player's country! This can come in handful when making country leader-board or attempting to display a player's country for whatever reason
 
 See the [Getting Started](gettingStarted) to jump into it!
 
