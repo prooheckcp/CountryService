@@ -1,0 +1,6 @@
+[docusaurus]
+onBrokenLinks = "throw"
+onBrokenMarkdownLinks = "warn"
+favicon = ""
+[footer]
+copyright = "Copyright © 2023 prooheckcp. Built with Moonwave and Docusaurus"
