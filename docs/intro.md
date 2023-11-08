@@ -8,13 +8,10 @@ CountryService is a lightweight library that allows you to easily get informatio
 
 See the [Getting Started](gettingStarted) to jump into it!
 
-## 🔍Why Choose RobloxStateMachine
+## 🔍Why Choose CountryService
 
-### 🏗️Structure
-RSM breaks down the complete logic of an AI into multiple fractions or files. This allows for developers to isolate their code and only work on one logic at a time making it easier to navigate thru large code bases without losing track of their work!
-
-### 🔌Extensible
-With this library it's very easy to add more states and transitions as your project evolves without the need to understand/go thru existing code.
+### 🔌Quick access
+This library allows you to get all the data you need in a single line of code! It's very easy and straightforward
 
 ### 🔧🧹Maintenance
 This library is heavily maintained and will continue to be for a very long time! If any bug ever gets found or feature is requested it will be updated as soon as possible.
