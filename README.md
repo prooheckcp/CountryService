@@ -27,6 +27,10 @@ countryservice = "prooheckcp/countryservice@>0.0.0, <10.0.0"
 
 You can start learning in the docs page! https://prooheckcp.github.io/CountryService/docs/intro
 
+# 💡 Example
+You can see an example place here:
+
+https://www.roblox.com/games/13186743835/CountryService-Example-Place
 
 # ⭐ Contributing
 Please leave a star on [GitHub](https://github.com/prooheckcp/CountryService), it helps a lot!
