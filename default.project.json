@@ -6,7 +6,7 @@
     "ReplicatedStorage": {
       "$ignoreUnknownInstances": true,
       "CountryService": {
-        "$path": "CountryService"
+        "$path": "src/CountryService"
       }
     },
 
