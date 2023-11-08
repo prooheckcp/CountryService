@@ -42,6 +42,14 @@ CountryService._cachedCodes = {} :: {[Player]: string}
     @return ()
 ]=]
 function CountryService:_Init(): ()
+    for countryCode: string, country: Country in Data do
+        country.Code = countryCode
+
+        for key: string, value: string in country do
+            country[string.lower(key)] = value -- Support lower-case indexing
+        end
+    end
+
     if RunService:IsClient() then
         self:_InitClient()
     elseif RunService:IsServer() then
@@ -191,7 +199,7 @@ end
     @return string -- Country Code
 ]=]
 function CountryService:GetPlayerCountryCode(player: Player): string
-    return self._cachedCodes[player] or DEFAULT_COUNTRY_CODE
+    return self:GetPlayerCountry(player).Code
 end
 
 --[=[
@@ -237,7 +245,16 @@ end
     @return ()
 ]=]
 function CountryService:_ClientPlayerAdded(player: Player): ()
+    local countryCode: string? = player:GetAttribute(COUNTRY_ATTRIBUTE)
 
+    if countryCode then
+        self._cachedCodes[player] = countryCode
+        return
+    end
+
+    player:GetAttributeChangedSignal(COUNTRY_ATTRIBUTE):Once(function()
+        self._cachedCodes[player] = player:GetAttribute(COUNTRY_ATTRIBUTE)
+    end)
 end
 
 --[=[

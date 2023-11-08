@@ -24,6 +24,15 @@ local Country = {}
 Country.__index = Country
 
 --[=[
+    The code of the country e.g **US**
+    
+    @prop Code string
+
+    @within Country
+]=]
+Country.Code = ""
+
+--[=[
     Contains the name of the country e.g **US = "United States"**
     @prop Name string
 
