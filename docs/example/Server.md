@@ -31,3 +31,8 @@ end)
 Result:
 
 ![](https://cdn.discordapp.com/attachments/670023265455964198/1171800680210641006/image.png?ex=655dff6d&is=654b8a6d&hm=9e985cd77ed85489b1bb572d9afecba1764b3e3059eb0691d4092d9a89a35536&)
+
+## 💡 Example
+You can see an example place here:
+
+https://www.roblox.com/games/13186743835/CountryService-Example-Place
