@@ -9,41 +9,32 @@ import TabItem from '@theme/TabItem';
 
 ## 📦 Installing
 
-RobloxStateMachine can be installed in different ways, depending on your project's needs. Choose the method that suits you best:
+CountryService can be installed in different ways, depending on your project's needs. Choose the method that suits you best:
 
 <Tabs className="unique-tabs">
   <TabItem value="wally" label="🐶 Wally" default>
-        <a href="https://wally.run/package/prooheckcp/robloxstatemachine">Watch wally's page</a>
-        <pre><code className="language-bash">{`robloxstatemachine = "prooheckcp/robloxstatemachine@>0.0.0, <10.0.0"`}</code></pre>
+        <a href="https://wally.run/package/prooheckcp/countryservice">Watch wally's page</a>
+        <pre><code className="language-bash">{`countryservice = "prooheckcp/countryservice@>0.0.0, <10.0.0"`}</code></pre>
   </TabItem>
   <TabItem value="studio" label="🔨Studio">
-    <a href="https://www.roblox.com/library/13401856320/RobloxStateMachine">Get the Roblox Model</a>
+    <a href="https://www.roblox.com/library/13194747001">Get the Roblox Model</a>
   </TabItem>
   <TabItem value="github" label="🐙GitHub">
-  <a href="https://github.com/prooheckcp/RobloxStateMachine/releases">Download from Github Releases</a>
+  <a href="https://github.com/prooheckcp/CountryService/releases">Download from Github Releases</a>
   </TabItem>
 </Tabs>
 
 
 # 🚀 Basic Usage
 
-Once you have RobloxStateMachine installed, you can start using it in your project. Here's a basic example of how to use it:
+Once you have CountryService installed, you can start using it in your project. Here's a basic example of how to use it:
 
 ```lua
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local CountryService = require(ReplicatedStorage.CountryService)
 
-local RobloxStateMachine = require(ReplicatedStorage.RobloxStateMachine)
-local exampleStateMachine = RobloxStateMachine.new(
-    "InitialState", -- Sets our initial state to "InitialState"
-    RobloxStateMachine:LoadDirectory(
-        script.Example.States, 
-        {"Blue", "Default"}), -- "Loads the states called "Blue" and "Default"
-    {
-        part = workspace.Example, -- Sends a reference to a part from workspace into the state machine
-        time = tick(), -- Sends the current tick
-        dummyData = "Hello World", -- Sends a string
-    }
-)
+Players.PlayerAdded:Connect(function(player: Player)
+    print(CountryService:GetCountryByCode("PT")) -- Portugal
+    print(CountryService:GetPlayerCountry(player)) -- Portugal
+    print(CountryService:GetPlayerCountryCode(player)) -- PT
+end)
 ```
-
-Looks a bit confusing at the first glance and for that reason we will be showing a very basic example of an implementation.
