@@ -13,7 +13,7 @@ CountryService can be installed in different ways, depending on your project's n
 
 <Tabs className="unique-tabs">
   <TabItem value="wally" label="🐶 Wally" default>
-        <a href="https://wally.run/package/prooheckcp/countryservice">Watch wally's page</a>
+        <a href="https://wally.run/package/prooheckcp/countryservice">See CountryService's Wally page</a>
         <pre><code className="language-bash">{`countryservice = "prooheckcp/countryservice@>0.0.0, <10.0.0"`}</code></pre>
   </TabItem>
   <TabItem value="studio" label="🔨Studio">

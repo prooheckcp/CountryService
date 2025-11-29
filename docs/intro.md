@@ -6,7 +6,7 @@ sidebar_label: "🤔About"
 
 CountryService is a lightweight library that allows you to easily get information about a given player's country! This can come in handful when making country leader-board or attempting to display a player's country for whatever reason
 
-See the [Getting Started](gettingStarted) to jump into it!
+See the [Getting Started](https://prooheckcp.github.io/CountryService/docs/gettingStarted/) to jump into it!
 
 ## 🔍Why Choose CountryService
 
